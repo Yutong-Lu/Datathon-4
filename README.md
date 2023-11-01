@@ -1,4 +1,4 @@
-# Datathon 4: Mortality Prediction Using ML (Low-Fidelity Submission)
+# Datathon 4: Mortality Prediction Using ML
 
 **Team 18: Pourya Momtaz, Rachel Yeung, Yutong Lu, Rohini Datta**
 
