@@ -3,9 +3,9 @@
 **Team 18: Pourya Momtaz, Rachel Yeung, Yutong Lu, Rohini Datta**
 
 ## Research Questions
-- Can we predict mortality probability (in-hospital deaths) and compare prediction accuracy using traditional tree-based methods vs neural networks?
+- Can we predict mortality probability (in-hospital deaths, column in the data: apache_4a_hospital_death_prob) and compare prediction accuracy using traditional tree-based methods vs neural networks?
 
-- Can we predict binary mortality (in-hospital deaths) and compare prediction accuracy using logistic regression vs neural networks?
+- Can we predict binary mortality (in-hospital deaths, column in the data: hospital_death) and compare prediction accuracy using logistic regression vs neural networks?
 
 ## Steps 
 Data Exploration and Preprocessing:
