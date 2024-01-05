@@ -1,41 +1,43 @@
-# Datathon 4: Mortality Prediction Using ML
+# Predictive Modelling for In-Hospital Mortality: A Comparative Analysis
+## Authors: Pourya Momtaz, Rachel Yeung, Yutong Lu, Rohini Datta
 
-**Team 18: Pourya Momtaz, Rachel Yeung, Yutong Lu, Rohini Datta**
+**Datathon 4, CHL5230, Dalla Lana School of Public Health**
 
-## Research Questions
-- Can we predict mortality probability (in-hospital deaths, column in the data: _apache_4a_hospital_death_prob_) and compare prediction accuracy using traditional tree-based methods vs neural networks?
+### Introduction
+- Aimed to predict in-hospital death using ICU patient data within the first 24 hours of admission.
+- Importance: Early mortality prediction aids medical professionals in patient care, resource allocation, and decision-making.
 
-- Can we predict binary mortality (in-hospital deaths, column in the data: _hospital_death_) and compare prediction accuracy using logistic regression vs neural networks?
+## Data Engineering Process
+- Utilized a dataset of 91,713 ICU patient observations with 186 variables.
+- Preprocessed data involved handling missing values, scaling, feature selection, and balancing the outcome.
+- Split data into training, validation, and test sets for different models.
 
-## Steps 
-Data Exploration and Preprocessing:
-- To explore the dataset and gain an understanding, preliminary descriptive statistics will be performed
-- Data will be visualized using appropriate methods (eg. box-plots, histograms, etc.)
-- Data will be cleaned up, included imputation for missing data and recoding of necessary variables
-- Additional steps include removal of outliers and collapsing of categories, if necessary
+## Analysis
+- Employed XGBoost, logistic regression, and two neural network models for mortality prediction.
+- Tuned hyperparameters for XGBoost via grid search and RFECV for logistic regression.
+- Evaluated model performance on test sets using metrics like accuracy, recall, and f1-score.
 
-Question 1:
+## Findings
+- XGBoost showed high overall accuracy but struggled with recall for predicting deaths due to imbalanced outcomes.
+- Logistic regression did not effectively predict hospital deaths despite high accuracy and moderate discriminatory power.
+- Both neural network models exhibited high accuracy but low recall and f1-scores for mortality prediction.
 
-Tree-based
+## Conclusion
+- Models demonstrated high accuracy but lacked effectiveness in identifying actual death instances.
+- Precision for mortality was unsatisfactory, posing risks for patient outcomes.
+- Caution advised in using these models for mortality prediction in ICU patients.
 
-1. Hyperparameters tuning for xgboost model
-2. Fit xgboost model
+## Resources
+- [Google Slides for presentation](https://docs.google.com/presentation/d/1ppLDI1yYeg0nWaywNHUkJP7tVQm9S9Wsg2RspHJs13U/edit#slide=id.p)
 
-Neural Networks
+## #References
+- Included key studies related to ICU mortality prediction and the dataset used.
 
-1. Try each activation function (e.g. softmax)
-2. Compare the performance of neural nets and xgboost
+For a detailed understanding, kindly refer to the full report available in the provided GitHub repository.
 
-Question 2:
 
-Logistic Regression (Rohini)
 
-1. Check the assumptions for logistic regression
-2. Feature selection using Recursive Feature Elimination with Cross-Validation (RFECV)
 
-Neural Networks
 
-1. Use sigmoid and/or hyperbolic tangent functions
-2. Training loop with loss function
-3. Check if data fits correctly using training and validation accuracy
-4. Compare the performance of neural nets and logistic regression
+
+
