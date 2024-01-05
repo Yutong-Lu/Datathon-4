@@ -30,7 +30,7 @@
 ## Resources
 - [Google Slides for presentation](https://docs.google.com/presentation/d/1ppLDI1yYeg0nWaywNHUkJP7tVQm9S9Wsg2RspHJs13U/edit#slide=id.p)
 
-## #References
+## References
 - Included key studies related to ICU mortality prediction and the dataset used.
 
 For a detailed understanding, kindly refer to the full report available in the provided GitHub repository.
